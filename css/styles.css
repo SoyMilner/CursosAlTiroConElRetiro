@@ -1,21 +1,16 @@
 /* Ejemplo básico de CSS */
 body {
     font-family: Arial, sans-serif;
-    background-color: #246769;
+    background-color: #6c8686;
     margin: 0;
     padding: 0;
 }
 
-.header {
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 20px;
-  }
 
 #saludo{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: rgb(59, 48, 48);
+    background-color: rgb(201, 201, 201);
     color: blueviolet;
     text-decoration: dotted;
 
@@ -24,3 +19,31 @@ body {
 .container {
     margin-top: 20px;
 }
+
+.navbar-brand img {
+    height: 50px;  /* Ajusta esta altura según tus necesidades */
+    width: auto;  /* Mantiene la proporción de la imagen */
+}
+
+/* Clase personalizada para la barra de navegación */
+
+.navbar-custom {
+    background-color: #343a40;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Aplica el color del texto a los enlaces dentro de la barra de navegación */
+.navbar-custom .nav-link {
+    color: #ffffff; /* Color del texto de los enlaces */
+}
+
+/* Estilos para el enlace activo */
+.navbar-custom .nav-link.active {
+    color: rgb(186, 221, 218) !important; /* Color del texto del enlace activo */
+    font-weight: bold; /* Para hacer el enlace activo más destacado */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #cccccc; /* Color al pasar el mouse por encima */
+}
+
