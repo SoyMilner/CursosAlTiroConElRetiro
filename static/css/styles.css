@@ -1,24 +1,3 @@
-/* Ejemplo básico de CSS */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #6c8686;
-    margin: 0;
-    padding: 0;
-}
-
-
-#saludo{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    background-color: rgb(201, 201, 201);
-    color: blueviolet;
-    text-decoration: dotted;
-
-}
-
-.container {
-    margin-top: 20px;
-}
 
 .navbar-brand img {
     height: 50px;  /* Ajusta esta altura según tus necesidades */
@@ -29,7 +8,14 @@ body {
 
 .navbar-custom {
     background-color: #343a40;
+    opacity: 0.75;
+    border-bottom: 2px solid #cccccc;
+    border-top: 2px solid #cccccc;
     font-family: 'Rubik', sans-serif;
+}
+
+.navbar-custom:hover {
+    opacity: 1;
 }
 
 /* Aplica el color del texto a los enlaces dentro de la barra de navegación */
@@ -39,11 +25,24 @@ body {
 
 /* Estilos para el enlace activo */
 .navbar-custom .nav-link.active {
-    color: rgb(186, 221, 218) !important; /* Color del texto del enlace activo */
+    color: rgb(75, 151, 40) !important; /* Color del texto del enlace activo */
     font-weight: bold; /* Para hacer el enlace activo más destacado */
+}
+
+/* Estilos para el enlace activo */
+.navbar-custom .nav-link.disabled {
+    color: rgb(141, 141, 141) !important; /* Color del texto del enlace NO activo */
 }
 
 .navbar-custom .nav-link:hover {
     color: #cccccc; /* Color al pasar el mouse por encima */
 }
 
+.navbar-custom .nav-link:focus {
+    color: rgb(67, 134, 36); /* Color al hacer clic sobre el enlace */ /*Se utiliza para el menú dropdown*/
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover; /* Para cubrir toda la pantalla */
+}
