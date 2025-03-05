@@ -43,6 +43,13 @@
 }
 
 body{
-    background-repeat: no-repeat;
+
     background-size: cover; /* Para cubrir toda la pantalla */
+}
+
+
+
+.content {
+    width: 100%;
+    /* And do whatever you want to do with your content */
 }
